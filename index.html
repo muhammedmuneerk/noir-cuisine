@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noir Cuisine - Sophisticated Dining Experience</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Header and Navigation -->
+    <header>
+        <nav id="navbar">
+            <div class="logo">Noir Cuisine</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#reservation">Reservation</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#blog">Blog</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <video autoplay muted loop id="hero-video">
+            <source src="./video/Untitled video - Made with Clipchamp.mp4" type="video/mp4">
+        </video>
+        <div class="hero-content">
+            <h1>Welcome to Noir Cuisine</h1>
+            <p>Experience the art of fine dining in darkness</p>
+            <a href="#reservation" class="cta-button">Reserve Now</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>Noir Cuisine offers an unparalleled dining experience, where the absence of light heightens your senses and transforms your perception of taste.</p>
+            <div class="about-grid">
+                <div class="about-image"></div>
+                <div class="about-text">
+                    <h3>Our Philosophy</h3>
+                    <p>We believe in the power of darkness to reveal the true essence of flavors. Our chefs craft exquisite dishes that challenge and delight your palate in ways you've never experienced before.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu">
+        <div class="container">
+            <h2>Our Menu</h2>
+            <div class="menu-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <!-- <button class="filter-btn" data-filter="bowls">Bowls</button> -->
+                <!-- <button class="filter-btn" data-filter="salads">Salads</button> -->
+                <button class="filter-btn" data-filter="sides">Sides</button>
+                <button class="filter-btn" data-filter="smalls">Smalls</button>
+                <button class="filter-btn" data-filter="specials">Specials</button>
+                <!-- <button class="filter-btn" data-filter="tacos">Tacos</button> -->
+            </div>
+            <div class="menu-items">
+                <!-- Menu items will be dynamically added here -->
+            </div>
+        </div>
+        
+        
+    </section>
+
+    <!-- Chef's Special Section -->
+    <section id="chefs-special" class="chefs-special">
+        <div class="container">
+            <h2>Chef's Special</h2>
+            <div class="special-dish">
+                <div class="dish-image"></div>
+                <div class="dish-details">
+                    <h3>Mystery Noir Platter</h3>
+                    <p>A carefully curated selection of our chef's most innovative creations, designed to challenge and delight your senses in complete darkness.</p>
+                    <span class="price">$75</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation Section -->
+    <section id="reservation" class="reservation">
+        <div class="container">
+            <h2>Make a Reservation</h2>
+            <form id="reservation-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <input type="tel" name="phone" placeholder="Phone Number" required>
+                <input type="date" name="date" required>
+                <input type="time" name="time" required>
+                <input type="number" name="guests" placeholder="Number of Guests" min="1" max="10" required>
+                <textarea name="special-requests" placeholder="Special Requests"></textarea>
+                <button type="submit">Reserve Now</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section id="events" class="events">
+        <div class="container">
+            <h2>Upcoming Events</h2>
+            <div class="event-grid">
+                <div class="event-card">
+                    <div class="event-image-1"></div>
+                    <div class="event-details">
+                        <h3>Blind Wine Tasting</h3>
+                        <p>Experience the true essence of wine without visual distractions.</p>
+                        <span class="date">June 15, 2023</span>
+                    </div>
+                </div>
+                <div class="event-card">
+                    <div class="event-image-2"></div>
+                    <div class="event-details">
+                        <h3>Chef's Table in the Dark</h3>
+                        <p>An intimate dining experience with our head chef in complete darkness.</p>
+                        <span class="date">July 22, 2023</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2>What Our Guests Say</h2>
+            <div class="testimonial-slider">
+                <div class="testimonial">
+                    <p>"An unforgettable experience that awakened my senses. The flavors were intense and the service impeccable."</p>
+                    <span class="author">- Sarah M.</span>
+                </div>
+                <div class="testimonial">
+                    <p>"Dining in the dark was both thrilling and enlightening. It changed my perception of food forever."</p>
+                    <span class="author">- John D.</span>
+                </div>
+                <div class="testimonial">
+                    <p>"The Mystery Noir Platter was a culinary adventure like no other. Highly recommended!"</p>
+                    <span class="author">- Emily R.</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2>Our Gallery</h2>
+            <!-- <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="interior">Interior</button>
+                <button class="filter-btn" data-filter="kitchen">Kitchen</button>
+                <button class="filter-btn" data-filter="drinks">Drinks</button>
+                <button class="filter-btn" data-filter="food">Food</button>
+            </div> -->
+            <div class="gallery-grid">
+                <div class="gallery-item" data-category="interior">
+                    <img src="images/gallery-1.jpg" alt="Elegant table setting" loading="lazy">
+                    <!-- <div class="overlay">
+                        <h3>Elegant Dining</h3>
+                        <p>Experience our sophisticated ambiance</p>
+                    </div> -->
+                </div>
+                <div class="gallery-item" data-category="kitchen">
+                    <img src="images/gallery-2.jpg" alt="Chef preparing a dish" loading="lazy">
+                    <!-- <div class="overlay">
+                        <h3>Culinary Artistry</h3>
+                        <p>Watch our chefs create masterpieces</p>
+                    </div> -->
+                </div>
+                <div class="gallery-item" data-category="drinks">
+                    <img src="images/gallery-3.jpg" alt="Signature cocktail" loading="lazy">
+                    <!-- <div class="overlay">
+                        <h3>Signature Cocktails</h3>
+                        <p>Indulge in our unique drink creations</p>
+                    </div> -->
+                </div>
+                <div class="gallery-item" data-category="food">
+                    <img src="images/gallery-4.jpg" alt="Plated dessert" loading="lazy">
+                    <!-- <div class="overlay">
+                        <h3>Sweet Delights</h3>
+                        <p>Savor our exquisite desserts</p>
+                    </div> -->
+                </div>
+                <div class="gallery-item" data-category="food">
+                    <img src="images/gallery-5.jpg" alt="Plated dessert" loading="lazy">
+                    <!-- <div class="overlay">
+                        <h3>Sweet Delights</h3>
+                        <p>Savor our exquisite desserts</p>
+                    </div> -->
+                </div>
+                <div class="gallery-item" data-category="food">
+                    <img src="images/gallery-6.jpg" alt="Plated dessert" loading="lazy">
+                    <!-- <div class="overlay">
+                        <h3>Sweet Delights</h3>
+                        <p>Savor our exquisite desserts</p>
+                    </div> -->
+                </div>
+                <div class="gallery-item" data-category="food">
+                    <img src="images/gallery-7.jpg" alt="Plated dessert" loading="lazy">
+                    <!-- <div class="overlay">
+                        <h3>Sweet Delights</h3>
+                        <p>Savor our exquisite desserts</p>
+                    </div> -->
+                </div>
+                <div class="gallery-item" data-category="food">
+                    <img src="images/gallery-8.avif" alt="Plated dessert" loading="lazy">
+                    <!-- <div class="overlay">
+                        <h3>Sweet Delights</h3>
+                        <p>Savor our exquisite desserts</p>
+                    </div> -->
+                </div>
+                <!-- Add more gallery items as needed -->
+            </div>
+        </div>
+        <div id="lightbox" class="lightbox">
+            <span class="close">&times;</span>
+            <img class="lightbox-content" id="lightbox-img">
+            <div id="lightbox-caption"></div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <div class="contact-grid">
+                <form id="contact-form">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" placeholder="Your Message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+                <div class="map">
+                    <!-- Replace with actual map embed code -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.1422937950147!2d-73.98731968459391!3d40.74844197932681!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a9b3117469%3A0xd134e199a405a163!2sEmpire%20State%20Building!5e0!3m2!1sen!2sus!4v1628614993851!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="blog">
+        <div class="container">
+            <h2>Culinary Stories</h2>
+            <div class="blog-grid">
+                <article class="blog-post">
+                    <div class="post-image-1"></div>
+                    <h3>The Art of Dining in Darkness</h3>
+                    <p>Explore how the absence of sight enhances your other senses during a meal.</p>
+                    <a href="#" class="read-more">Read More</a>
+                </article>
+                <article class="blog-post">
+                    <div class="post-image-2"></div>
+                    <h3>Behind the Scenes: Creating Our Menu</h3>
+                    <p>Our head chef shares insights into the creative process behind our unique dishes.</p>
+                    <a href="#" class="read-more">Read More</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-accordion">
+                <div class="faq-item">
+                    <h3 class="question">What is dining in the dark?</h3>
+                    <div class="answer">
+                        <p>Dining in the dark is a unique sensory experience where guests enjoy their meal in complete darkness. This heightens your other senses, particularly taste and smell, leading to a more intense and memorable dining experience.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <h3 class="question">Is it completely dark?</h3>
+                    <div class="answer">
+                        <p>Yes, our dining room is pitch black. Our staff are trained to navigate in darkness and will guide you throughout your experience.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <h3 class="question">Can I choose my meal?</h3>
+                    <div class="answer">
+                        <p>We offer set menus with options for dietary restrictions. The specific dishes remain a surprise to enhance the sensory experience.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <h3>Noir Cuisine</h3>
+                    <p>123 Shadow Lane, Darkville, NY 10001</p>
+                    <p>Phone: (555) 123-4567</p>
+                    <p>Email: info@noircuisine.com</p>
+                </div>
+                <div class="footer-hours">
+                    <h3>Hours</h3>
+                    <p>Monday - Thursday: 6pm - 10pm</p>
+                    <p>Friday - Saturday: 6pm - 11pm</p>
+                    <p>Sunday: Closed</p>
+                </div>
+                <div class="footer-social">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Noir Cuisine. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
