@@ -17,6 +17,11 @@
     <header>
         <nav id="navbar">
             <div class="logo">Noir Cuisine</div>
+            <div class="hamburger-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -27,11 +32,6 @@
                 <li><a href="#contact">Contact</a></li>
                 <li><a href="#blog">Blog</a></li>
             </ul>
-            <div class="burger">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
         </nav>
     </header>
 
@@ -68,19 +68,14 @@
             <h2>Our Menu</h2>
             <div class="menu-filter">
                 <button class="filter-btn active" data-filter="all">All</button>
-                <!-- <button class="filter-btn" data-filter="bowls">Bowls</button> -->
-                <!-- <button class="filter-btn" data-filter="salads">Salads</button> -->
                 <button class="filter-btn" data-filter="sides">Sides</button>
                 <button class="filter-btn" data-filter="smalls">Smalls</button>
                 <button class="filter-btn" data-filter="specials">Specials</button>
-                <!-- <button class="filter-btn" data-filter="tacos">Tacos</button> -->
             </div>
             <div class="menu-items">
                 <!-- Menu items will be dynamically added here -->
             </div>
         </div>
-        
-        
     </section>
 
     <!-- Chef's Special Section -->
@@ -140,8 +135,8 @@
         </div>
     </section>
 
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="testimonials">
+      <!-- Testimonials Section -->
+      <section id="testimonials" class="testimonials">
         <div class="container">
             <h2>What Our Guests Say</h2>
             <div class="testimonial-slider">
@@ -165,71 +160,31 @@
     <section id="gallery" class="gallery">
         <div class="container">
             <h2>Our Gallery</h2>
-            <!-- <div class="filter-buttons">
-                <button class="filter-btn active" data-filter="all">All</button>
-                <button class="filter-btn" data-filter="interior">Interior</button>
-                <button class="filter-btn" data-filter="kitchen">Kitchen</button>
-                <button class="filter-btn" data-filter="drinks">Drinks</button>
-                <button class="filter-btn" data-filter="food">Food</button>
-            </div> -->
             <div class="gallery-grid">
                 <div class="gallery-item" data-category="interior">
                     <img src="images/gallery-1.jpg" alt="Elegant table setting" loading="lazy">
-                    <!-- <div class="overlay">
-                        <h3>Elegant Dining</h3>
-                        <p>Experience our sophisticated ambiance</p>
-                    </div> -->
                 </div>
                 <div class="gallery-item" data-category="kitchen">
                     <img src="images/gallery-2.jpg" alt="Chef preparing a dish" loading="lazy">
-                    <!-- <div class="overlay">
-                        <h3>Culinary Artistry</h3>
-                        <p>Watch our chefs create masterpieces</p>
-                    </div> -->
                 </div>
                 <div class="gallery-item" data-category="drinks">
                     <img src="images/gallery-3.jpg" alt="Signature cocktail" loading="lazy">
-                    <!-- <div class="overlay">
-                        <h3>Signature Cocktails</h3>
-                        <p>Indulge in our unique drink creations</p>
-                    </div> -->
                 </div>
                 <div class="gallery-item" data-category="food">
                     <img src="images/gallery-4.jpg" alt="Plated dessert" loading="lazy">
-                    <!-- <div class="overlay">
-                        <h3>Sweet Delights</h3>
-                        <p>Savor our exquisite desserts</p>
-                    </div> -->
                 </div>
                 <div class="gallery-item" data-category="food">
                     <img src="images/gallery-5.jpg" alt="Plated dessert" loading="lazy">
-                    <!-- <div class="overlay">
-                        <h3>Sweet Delights</h3>
-                        <p>Savor our exquisite desserts</p>
-                    </div> -->
                 </div>
                 <div class="gallery-item" data-category="food">
                     <img src="images/gallery-6.jpg" alt="Plated dessert" loading="lazy">
-                    <!-- <div class="overlay">
-                        <h3>Sweet Delights</h3>
-                        <p>Savor our exquisite desserts</p>
-                    </div> -->
                 </div>
                 <div class="gallery-item" data-category="food">
                     <img src="images/gallery-7.jpg" alt="Plated dessert" loading="lazy">
-                    <!-- <div class="overlay">
-                        <h3>Sweet Delights</h3>
-                        <p>Savor our exquisite desserts</p>
-                    </div> -->
                 </div>
                 <div class="gallery-item" data-category="food">
                     <img src="images/gallery-8.avif" alt="Plated dessert" loading="lazy">
-                    <!-- <div class="overlay">
-                        <h3>Sweet Delights</h3>
-                        <p>Savor our exquisite desserts</p>
-                    </div> -->
                 </div>
-                <!-- Add more gallery items as needed -->
             </div>
         </div>
         <div id="lightbox" class="lightbox">
@@ -251,7 +206,6 @@
                     <button type="submit">Send Message</button>
                 </form>
                 <div class="map">
-                    <!-- Replace with actual map embed code -->
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.1422937950147!2d-73.98731968459391!3d40.74844197932681!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a9b3117469%3A0xd134e199a405a163!2sEmpire%20State%20Building!5e0!3m2!1sen!2sus!4v1628614993851!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
             </div>
@@ -332,9 +286,10 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2023 Noir Cuisine. All rights reserved.</p>
+                <p>&copy; 2024 Noir Cuisine. All rights reserved. Design by MMK</p>
             </div>
         </div>
     </footer>
 </body>
 </html>
+
