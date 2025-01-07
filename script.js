@@ -261,7 +261,7 @@ document.addEventListener('DOMContentLoaded', () => {
   script.async = true;
   document.head.appendChild(script);
 
-  initMap();
+//   initMap();
 
   // Blog Posts
   const blogPosts = [
