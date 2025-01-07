@@ -363,5 +363,33 @@ document.addEventListener('DOMContentLoaded', () => {
       el.setAttribute("aria-label", el.textContent);
     }
   });
+
+
+  const currentYear = new Date().getFullYear();
+  document.querySelector('.footer-bottom p').innerHTML = document.querySelector('.footer-bottom p').innerHTML.replace('2024', currentYear);
+
+  const newsletterForm = document.getElementById('newsletter-form');
+  newsletterForm.addEventListener('submit', function(e) {
+    e.preventDefault();
+    const email = this.querySelector('input[type="email"]').value;
+    alert(`Thank you for subscribing with email: ${email}`);
+    this.reset();
+  });
+
+  const privacyPolicy = document.getElementById('privacy-policy');
+  const termsOfService = document.getElementById('terms-of-service');
+
+  privacyPolicy.addEventListener('click', function(e) {
+    e.preventDefault();
+    alert('Privacy Policy: Your privacy is important to us. We respect your personal information and ensure its protection.');
+  });
+
+  termsOfService.addEventListener('click', function(e) {
+    e.preventDefault();
+    alert('Terms of Service: By using our services, you agree to abide by our terms and conditions.');
+  });
+  
+
+
 });
 
